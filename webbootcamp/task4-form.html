@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Register</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form>
+        <div>
+            <label for="first-name">Firstname: </label>
+            <input name="firstName" type="text"  id="first-name" placeholder="John" required>
+            <label for="last-name">Lastname: </label>
+            <input name="lastName" type="text" id="last-name" placeholder="Smith" required>
+        </div>
+
+        <div>
+            <label>Gender: </label>
+
+            <label for="gender-1">Male</label>
+            <input type="radio" name="gender" id="gender-1" value="male">
+
+            <label for="gender-2">Female</label>
+            <input type="radio" name="gender" id="gender-2" value="female">
+
+            <label for="gender-3">Other</label>
+            <input type="radio" name="gender" id="gender-3" value="other">            
+        </div>
+
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="your email">
+            
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" placeholder="your password" pattern=".{5,10}" placeholder="your password" required title="password must be 5-10 characters">
+        </div>
+
+        <fieldset>
+            <legend>Birthday</legend>
+            <label for="month">Month</label>
+            <select name="birthday-monnth" id="month">
+                <option value="0" selected disabled>Month</option>
+                <option value="january">Jan</option>
+                <option value="february">Feb</option>
+                <option value="march">Mar</option>
+                <option value="april">Apr</option>
+                <option value="may">May</option>
+                <option value="june">Jun</option>              
+            </select>
+
+            <label for="day">Day</label>
+            <select name="birthday-day" id="day">
+                <option value="0" selected disabled>Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <label for="year">Year</label>
+            <select name="birthday-year" id="year">
+                <option value="0" selected disabled>Year</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+            </select>
+        </fieldset>
+
+        <div>
+            <label for="terms-conditions">I agree to terms and conditions</label>
+            <input type="checkbox" name="terms-conditions" id="terms-conditions">
+        </div>
+        
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
