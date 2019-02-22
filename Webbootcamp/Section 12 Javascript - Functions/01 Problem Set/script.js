@@ -30,3 +30,11 @@ function factorial(num){
     return result;
 }
 
+function kebabToSnake(str){
+    //replace "-" to "_"
+    var newStr = str.replace(/-/g, "_");
+
+    return newStr;
+}
+
+alert(kebabToSnake("halo-halo_bandung"));
